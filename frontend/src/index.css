@@ -67,15 +67,25 @@ button:focus-visible {
   }
 } */
 
+@font-face {
+  font-family: "Switzer-Regular";
+  src: url("../fonts/Switzer-Regular.woff2") format("woff2"),
+    url("../fonts/Switzer-Regular.woff") format("woff"),
+    url("../fonts/Switzer-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
 :root {
   --clr-black: #000000;
   --clr-light: #ffffff;
 
-  --ff-primary: "Poppins", sans-serif;
+  --ff-primary: "Switzer-Regular";
 
-  --fw-regular: 400;
+  /* --fw-regular: 400;
   --fw-medium: 500;
-  --fw-semi-bold: 900;
+  --fw-semi-bold: 900; */
 
   --fs-xxs: 12px;
   --fs-xs: 16px;
@@ -122,7 +132,7 @@ p {
 h1 {
   font-family: var(--ff-primary);
   font-size: var(--fs-xl);
-  font-weight: var(--fw-medium);
+  /* font-weight: var(--fw-medium); */
 }
 
 h2 {
