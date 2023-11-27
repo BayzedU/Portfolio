@@ -1,9 +1,11 @@
 import React from "react";
+import Menu from "../components/Menu";
+import "../styles/Home.css";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
+    <div className="home">
+      <Menu />
     </div>
   );
 };

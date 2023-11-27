@@ -69,11 +69,11 @@ button:focus-visible {
 
 @font-face {
   font-family: "Switzer-Regular";
-  src: url("../fonts/Switzer-Regular.woff2") format("woff2"),
-    url("../fonts/Switzer-Regular.woff") format("woff"),
-    url("../fonts/Switzer-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/Switzer-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Switzer-Regular.woff") format("woff"),
+    url(".assets//fonts/Switzer-Regular.ttf") format("truetype");
   font-weight: 400;
-  font-display: swap;
+  /* font-display: swap; */
   font-style: normal;
 }
 
@@ -87,12 +87,12 @@ button:focus-visible {
   --fw-medium: 500;
   --fw-semi-bold: 900; */
 
-  --fs-xxs: 12px;
-  --fs-xs: 16px;
-  --fs-s: 20px;
-  --fs-m: 24px;
-  --fs-l: 42px;
-  --fs-xl: 70px;
+  --fs-xxs: 20px;
+  --fs-xs: 24px;
+  --fs-s: 28px;
+  --fs-m: 48px;
+  --fs-l: 55px;
+  --fs-xl: 170px;
 }
 
 /* Box sizing rules */
@@ -104,12 +104,10 @@ button:focus-visible {
 
 /* Remove default margin */
 * {
-  font-family: var(--ff-primary) !important;
+  font-family: var(--ff-primary);
   margin: 0;
   padding: 0;
   font: inherit;
-
-  text-transform: none !important;
 }
 
 /*Removes default text styling on anchor tags*/
@@ -162,13 +160,12 @@ h5 {
 
 h6 {
   font-family: var(--ff-primary);
-  font-size: var(--fs-xs);
+  font-size: var(--fs-xxs);
   font-weight: var(--fw-regular);
-  font-style: italic;
 }
 
 /* Button Styles */
-button {
+/* button {
   width: auto;
   padding: 13px 35px;
   font-family: var(--ff-primary);
@@ -216,13 +213,13 @@ input {
   color: var(--clr-light);
   padding: 10px;
   margin-bottom: 30px;
-}
+} */
 
-::placeholder {
+/* ::placeholder {
   color: var(--clr-light);
   opacity: 0.4;
   font-size: var(--fs-xs);
-}
+} */
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
